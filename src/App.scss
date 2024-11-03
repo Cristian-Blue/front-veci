@@ -1,0 +1,53 @@
+
+$width : 240px;
+
+.dashboard{
+
+    display: flex;
+    flex-direction: row;
+    .drawer{
+        width: $width;
+        flex-shrink: 0;
+        > .MuiDrawer-paper{
+            width: $width;
+            box-sizing: border-box;
+        }
+        .ofa{
+            overflow: auto;
+        }
+    }
+    .main{
+        flex-grow: 1;
+        padding: 4em 1.5em;
+    }
+}
+.w100{
+    width: 100%;
+}
+
+.p15{
+    padding: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: #3c3c3c ;
+}
+
+table{
+    border-radius: 10px;
+    padding: 0.2em;
+    width: 100%;
+    th{
+        background-color: rgb(204, 204, 204);
+        text-align: center !important;
+    }
+    tbody{
+        background-color: white ;
+    }
+}
+
+.mx50{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
