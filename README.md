@@ -55,9 +55,11 @@ RecargasApp/
 
 Configuración de variables de entorno
 ```
+
 ###> END POINT <###
 REACT_APP_API_URL=
 ###> END POINT <###
+
 ```
 
 Comando de instalación
@@ -68,12 +70,15 @@ Comando de instalación
 # Ejecución
 
 ## Desarrollo
+Para la ejeucución en el entorno de desarrollo se recomienda utilizar el siguiente comando
 
 ```
     npm start
 ```
 
 ## Build
+
+Para la construcción de la aplicación y posterior lanzamiento
 
 ```
     npm build
