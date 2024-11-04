@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Veci - Prueba técnica Punto Red
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta aplicación hace parte de la prueba técnica de punto red realizada con la libreria React, axios, integrando material ui y toastifing, la cual consta de 3 sección, unicio de seción, recarga de dispositivos y consulta de trasacciones, donde las dos últimas partes mensionadas requieren de autenticación mediante cabezeras Authentication Bearer para su acceso.
 
-## Available Scripts
+# Tabla de contenido
 
-In the project directory, you can run:
+- [Introducción](#Veci---Prueba-técnica-Punto-Red)
+- [Características](#Caracteristicas)
+- [Estructura del proyecto](#Estructura-del-proyecto)
+- [Instalación](#Instalación)
+- [Ejecución](#Ejecución)
+- [Estructura del Proyecto](#estructura-del-proyecto) 
 
-### `npm start`
+# Caracteristicas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Sistema de inicio de sesión
+- Recargas a números colombianos
+- Consulta de recargas históricas
+- Validación de campos
+- Notificación de procesos
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Estructura del proyecto
 
-### `npm test`
+```bash
+RecargasApp/
+├── public/
+├── src/
+│   ├── assets/          # Imagenes utilizadas para la creación del proyecto
+│   ├── components/      # Elementos de uso frecuente en la aplicación
+│   ├── pages/           # Secciones de la aplicación que contiene la estructura de cada vista
+│   ├── provider/        # Configuración de uso general
+│   ├── routes/          # Configuración de rutas
+│   ├── services/        # Servicios de externos para consumo de la aplicación
+├── .gitignore           # Archivos ignorados por Git
+├── package.json         # Metadatos del proyecto y dependencias
+├── README.md            # Documentación del proyecto
+└── ...
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Instalación
 
-### `npm run build`
+## Requerimientos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node js (^20.* )
+- NPM (^10.*)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Descarga del repositorio
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+    git clone https://github.com/Cristian-Blue/front-veci.git
+    cd front-veci
+```
 
-### `npm run eject`
+### instalación 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Configuración de variables de entorno
+```
+###> END POINT <###
+REACT_APP_API_URL=
+###> END POINT <###
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Comando de instalación
+```
+    npm install 
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Ejecución
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Desarrollo
 
-## Learn More
+```
+    npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Build
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+    npm build
+```
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
